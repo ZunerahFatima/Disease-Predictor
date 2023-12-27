@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<style>
+
+
+    body{background:rgb(73, 52, 105);
+
+    font-family: monospace;
+
+    text-align: center;
+
+    font-size: 1.5rem;
+
+    position: relative;
+   
+
+}
+
+img {
+
+    padding: 10px;
+
+  }
+
+ 
+
+  img:hover {
+
+    transform: scale(1.4);
+
+    transition:all 1s;
+
+  }
+
+ 
+
+  .container {
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 20%;
+
+    transform: translate(-50%, -50%);
+
+    min-height: 400px;
+
+  }
+
+body{
+
+    background:#d0bcd5;
+
+    height: 80vh;
+
+}
+
+.register_page{
+
+    width: 460px;
+
+    margin: auto;
+
+}
+
+.form{
+
+    position: middle;
+
+    z-index: 1;
+
+    background:#a499b3;
+
+    max-width: 360px;
+
+    text-align: left;
+
+    margin: 0 auto 100px;
+
+    padding: 45px;
+
+}
+
+.form input{
+
+    font-family: 'Times New Roman', Times, serif;
+
+    outline: 1;
+
+    background: white;
+
+    width: 100%;
+
+    border: 0;
+
+    margin: 0 0 15px;
+
+    padding: 15px;
+
+    box-sizing: border-box;
+
+    font-size: 14px;
+
+}
+
+.submit{
+
+    font-size: 15px;
+
+    text-transform: uppercase;
+
+    font-weight: 600;
+
+    color:black;
+
+}
+
+select{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+}
+
+
+</style>
+
+    <meta charset='utf-8'>
+
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+    <title>Heart Disease Prediction</title>
+
+    <h1>Heart Disease Prediction</h1>
+
+ 
+
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <script src='main.js'></script>
+   
+</head>
+
+<body>
+   
+
+    <div class="register_page">
+
+        <div class="form">
+
+            <form action="{{url_for('predict')}}" method="POST">
+
+                Age: <input type="number" name='Age' placeholder="Enter your Age"><br><br>
+
+                <label for="gender">Gender:</label><br>
+
+                <select name="gender" id="gender" style="height:50px">
+                <option value=2>Select</option>  
+                <option value=0>Female</option>
+                <option value=1>Male</option>
+                </select><br><br>
+ 
+                <label for="chestpain">Chest Pain Type</label><br>
+
+                <select name="chestpain" id="chestpain">
+                <option value= 9>Select</option>  
+                <option value= 1>Typical angina</option>
+                <option value= 2>Atypical angina</option>
+                <option value= 3>Non-anginal pain</option>
+                <option value= 4>Asymptomatic</option>
+                </select><br><br>
+
+                Blood Pressure: <input type="number" name='bloodpressure' placeholder="Enter Blood Pressure"><br><br>
+
+                Cholesterol: <input type="number" name='Cholesterol' placeholder="Enter Cholesterol"><br><br>
+
+                <label for="fbs">Fasting Blood Sugar over 120</label><br>
+
+                <select name="fbs" id="fbs">
+                <option value= 9>Select</option>
+                <option value= 0>False</option>
+                <option value= 1>True</option>
+                </select><br><br>
+
+                <label for="ekg">EKG results</label><br>
+
+                <select name="ekg" id="ekg">
+                <option value= 9>Select</option>
+                <option value= 0>Normal</option>
+                <option value= 1>Having ST-T wave abnormality<br>
+                </option>
+                <option value= 2>Showing probable or definite left ventricular hypertrophy
+                     
+                </option>
+                </select><br><br><br>
+
+                Max HR: <input type="number" name='maxhr' placeholder="Enter max HR"><br><br>
+
+                <label for="exercise">Excercise angina</label><br>
+
+                <select name="exercise" id="exercise">
+                <option value= 9>Select</option>
+                <option value= 0>No</option>
+                <option value= 1>Yes</option>
+                </select><br><br>
+
+                ST depression: <input type="number" name='stdepression' placeholder="Enter ST depression" step = "0.0001"><br><br>
+
+                <label for="slopeofst">Slope of ST</label><br>
+
+                <select name="slopeofst" id="slopeofst">
+
+                    <option value= 9>Select</option>
+                    <option value= 1>Upsloping</option>
+                    <option value= 2>Flat</option>
+                    <option value= 3>Downsloping</option>
+                    </select><br><br>
+
+                <label for="numberofvessels">Number of vessels colored by fluroscopy:</label><br>
+
+                <select name="numberofvessels" id="numberofvessels">
+
+                    <option value= 9>Select</option>
+                    <option value= 0>0</option>
+                    <option value= 1>1</option>
+                    <option value= 2>2</option>
+                    <option value= 3>3</option>
+                    </select><br><br>
+
+                <label for="thallium">Thallium</label><br>
+
+                <select name="thallium" id="thallium">
+
+                    <option value= 9>Select</option>
+                    <option value= 3>3</option>
+                    <option value= 4>4</option>
+                    <option value= 5>5</option>
+                    <option value= 6>6</option>
+                    <option value= 7>7</option>
+                    </select><br><br>
+
+                <input type="submit" value="predict" class="submit">
+
+            </form>
+
+            <p> Heart Disease Prediction:{{data}}</p>
+
+        </div>
+
+    </div>
+
+</body>
+ 
+</html>

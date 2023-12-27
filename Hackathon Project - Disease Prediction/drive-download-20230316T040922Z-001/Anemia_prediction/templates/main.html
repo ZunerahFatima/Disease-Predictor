@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+    body{background:rgb(73,52,105);
+    font-family: monospace;
+    text-align: center;
+    font-size: 1.5rem;
+    position: relative;
+}
+img {
+    padding: 10px;
+  }
+  
+  img:hover {
+    transform: scale(1.4);
+    transition:all 1s;
+  }
+  
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 400px;
+  }
+body{
+    background:#d0bcd5;
+    height: 100vh;
+}
+.register_page{
+    width: 460px;
+    margin: auto;
+}
+.form{
+    position: middle;
+    z-index: 1;
+    background: #a499b3;
+    max-width: 360px;
+    text-align: left;
+    margin: 0 auto 100px;
+    padding: 45px;
+}
+.form input{
+    font-family: 'Times New Roman', Times, serif;
+    outline: 1;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.submit{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color:black;
+}
+</style>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Anemia Disease Prediction</title>
+    <h1>Anemia Disease Prediction</h1>
+
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="register_page">
+        <div class="form">
+            <form action="{{url_for('predict')}}" method="POST">
+                Gender: <input type="number" name='Gender' step="0.01" placeholder="Enter the Gender"><br>
+                Hemoglobin: <input type="number" name='Hemoglobin' step="0.01" placeholder="Enter the Hemoglobin level"><br>
+                MCH: <input type="number" name='MCH' step="0.01" placeholder="Enter the MCH level"><br>
+                MCHC: <input type="number" name='MCHC' step="0.01" placeholder="Enter the MCHC level"><br>
+                MCV: <input type="number" name='MCV' step="0.01" placeholder="Enter the size of RBC"><br>
+                <input type="submit" value="predict" class="submit">
+            </form>
+            <p> Result:{{data}}<br>
+            </p>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

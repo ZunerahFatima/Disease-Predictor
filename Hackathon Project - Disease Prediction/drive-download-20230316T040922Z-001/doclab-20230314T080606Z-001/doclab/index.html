@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>FemmeMedi</title>
+  <meta name="title" content="Doclab - home">
+  <meta name="description" content="This is a madical html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="icon" type="image/x-icon" href="./assets/images/final.png">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Rubik:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/main.png">
+  <link rel="preload" as="image" href="./assets/images/hero-bg.png">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preloader" data-preloader>
+    <div class="circle"></div>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/final.png" width="100" height="30" alt="Doclab home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/final.png" width="100" height="30" alt="Doclab home">
+          </a>
+
+          <button class="nav-close-btn" aria-label="clsoe menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+        </div>
+
+        
+       
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+     
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" style="background-image: url('./assets/images/hero-bg.png')" aria-label="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle has-before" data-reveal="left">Welcome To FemmeMedi</p>
+
+            <h1 class="headline-lg hero-title" data-reveal="left">
+              You Tell <br>
+              We Diagnose!
+            </h1>
+
+            
+              
+
+            
+
+          </div>
+
+          <figure class="hero-banner" data-reveal="right">
+            <img src="./assets/images/main.png" width="590" height="517" loading="eager" alt="hero banner"
+              class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="service" aria-label="service">
+        <div class="container">
+
+          <ul class="service-list">
+            <li>
+              <div class="service-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <img src="./assets/images/icon-3.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="headline-sm card-title">
+                  <a href="#">Diabetes</a>
+                </h3>
+
+                <p class="card-text">
+                  Diabetes is a chronic disease that occurs either when the pancreas does not produce enough insulin or when the body cannot effectively use the insulin it produces.
+                </p>
+                <a href = "Diabetes">
+                  <button class="btn-circle" aria-label="read more about Pulmonology">
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </button>
+                </a>
+                
+
+              </div>
+            </li>
+            <li>
+              <div class="service-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <img src="./assets/images/icon-4.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="headline-sm card-title">
+                  <a href="#">Heart Disease</a>
+                </h3>
+
+                <p class="card-text">
+                  Heart disease describes a range of conditions that affect the heart. Leading risk factors for heart disease and stroke are high blood pressure, high low-density lipoprotein (LDL) cholesterol, diabetes, smoking and many more.
+                </p>
+
+                <button class="btn-circle" aria-label="read more about Orthopedics">
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </button>
+
+              </div>
+            </li>
+           
+
+            <li>
+              <div class="service-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <img src="./assets/images/icon-1.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="headline-sm card-title">
+                  <a href="#">Anemia</a>
+                </h3>
+                <p class="card-text">
+                  Anemia is a condition in which you lack enough healthy red blood cells to carry adequate oxygen to your body's tissues. Having anemia, also referred to as low hemoglobin, can make you feel tired and weak.
+                </p>
+
+                <button class="btn-circle" aria-label="read more about Gynecology">
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
+            </li>
+            <li>
+              <div class="service-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <img src="./assets/images/icon-2.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="headline-sm card-title">
+                  <a href="#">Bone Mineral Density</a>
+                </h3>
+
+                <p class="card-text">
+                  A measure of the amount of minerals (mostly calcium and phosphorous) contained in a certain volume of bone. A lifelong lack of calcium plays a role in the development of osteoporosis.
+                </p>
+
+                <button class="btn-circle" aria-label="read more about Gynecology">
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </button>
+
+              </div>
+            </li>
+
+           
+
+          
+
+            
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+            
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog" aria-labelledby="blog-label">
+        <div class="container">
+          <p class="section-subtitle title-lg text-center" id="blog-label" data-reveal="bottom">
+            Facts & Statistics
+          </p>
+          <h2 class="section-title headline-md text-center" data-reveal="bottom">Latest Statistics</h2>
+          <ul class="grid-list">
+            <li>
+              <div class="blog-card has-before has-after" data-reveal="bottom">
+                <div class="meta-wrapper">
+                </div>
+                <h3 class="headline-sm card-title">Diabetes</h3>
+                <p class="card-text">
+                  About 15 million women in the world have diabetes, or about 1 in every 9 adult women
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="blog-card has-before has-after" data-reveal="bottom">
+                <div class="meta-wrapper">
+                </div>
+                <h3 class="headline-sm card-title">Heart Disease</h3>
+                <p class="card-text">
+                  Women found to be at higher risk for heart failure and heart attack death than men.
+                </p>
+              </div>
+            </li>
+            
+            
+            <li>
+              <div class="blog-card has-before has-after" data-reveal="bottom">
+                <div class="meta-wrapper">
+                </div>
+                <h3 class="headline-sm card-title">Anemia</h3>
+                <p class="card-text">
+                  Anemia affects more women than men and is more common during pregnancies.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="blog-card has-before has-after" data-reveal="bottom">
+                <div class="meta-wrapper">
+                </div>
+                <h3 class="headline-sm card-title">Bone Mineral Density</h3>
+                <p class="card-text">
+                  Males tend to have higher bone density and content and they achieve it at later age compared with females.
+                </p>
+              </div>
+            </li>
+            
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+           
+      
+     
+                
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" style="background-image: url('./assets/images/footer-bg.png')">
+    <div class="container">
+
+      <div class="section footer-top">
+
+        <div class="footer-brand" data-reveal="bottom">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/final.png" width="136" height="46" loading="lazy" alt="Doclab home">
+          </a>
+
+          <ul class="contact-list has-after">
+
+            <li class="contact-item">
+
+              <div class="item-icon">
+                <ion-icon name="mail-open-outline"></ion-icon>
+              </div>
+
+              <div>
+                <p>
+                  Main Email : <a href="mailto:contact@website.com" class="contact-link">contact@&shy;website.com</a>
+                </p>
+
+                <p>
+                  Inquiries : <a href="mailto:Info@mail.com" class="contact-link">Info@mail.com</a>
+                </p>
+              </div>
+
+            </li>
+
+            <li class="contact-item">
+
+              <div class="item-icon">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+
+              <div>
+                <p>
+                  Office Telephone : <a href="tel:0029129102320" class="contact-link">0029129102320</a>
+                </p>
+
+                <p>
+                  Mobile : <a href="tel:000232439493" class="contact-link">000 2324 39493</a>
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </div>
+
+       
+
+        
+
+
+
+      <div class="footer-bottom">
+
+        <p class="text copyright">
+          &copy; Doclab 2022 | All Rights Reserved by codewithsadee
+        </p>
+
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
